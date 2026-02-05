@@ -1,0 +1,20 @@
+{
+    "render_service_url": {
+        "description": "图片渲染服务地址",
+        "type": "string",
+        "default": "http://172.17.0.1:51234",
+        "hint": "text2img-service 的地址，Docker 环境使用 172.17.0.1"
+    },
+    "turn_timeout_seconds": {
+        "description": "每回合思考时间（秒），超时自动认输",
+        "type": "int",
+        "default": 60,
+        "hint": "设为 0 可禁用超时功能"
+    },
+    "join_timeout_seconds": {
+        "description": "等待对手加入超时（秒），超时自动取消游戏",
+        "type": "int",
+        "default": 60,
+        "hint": "设为 0 可禁用此功能"
+    }
+}
